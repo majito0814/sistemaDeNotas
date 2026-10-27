@@ -134,7 +134,6 @@ class Estudiantes:
                     filas_afectadas = cursor.rowcount
                 connection.commit()
                 return filas_afectadas > 0
-
             except Exception as e:
                 print(f"Error al eliminar estudiante: {e}")
                 return False
